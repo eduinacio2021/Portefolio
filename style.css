@@ -2,11 +2,13 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
+
 a {
     color: white;
     text-decoration: none;
 
 }
+
 .container {
     min-height: 500px;
     max-width: 1024px;
@@ -14,12 +16,17 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 140px;
 }
+
 .header-container {
+    font-size: 0.8rem;
     background-color: rgb(56, 78, 78);
     min-height: 100px;
-    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
 }
+
 header {
     max-width: 1024px;
     background-color: rgb(56, 78, 78);
@@ -36,6 +43,7 @@ header {
     background-color: rgb(13, 69, 172);
 
 }
+
 .col p {
     color: white;
     font-size: 0.87rem;
@@ -52,9 +60,11 @@ header {
     height: auto;
     
 }
+
 .col p::first-line {
     font-weight: 700;
 }
+
 .mybutton {
     padding:10px 25px ;
     border-style: solid;
@@ -62,12 +72,50 @@ header {
     margin-left: 20px;
 }
 
+.highlight {
+    font-weight: 700;
+}
+.mob-wrapper  {
+    display: none;
+}
+.mob-nav {
+    display: none;
+}
+/* Smartphone*/
 
 @media (max-width: 768px) {
     .col {
     width: 45%;
 }
+
 .hide-desktop-only {
+    display: block;
+}
+header {
+    display: block;
+    text-align: center;
+
+}
+.header-container {
+    position: relative;
+}
+.container {
+    padding: 40px;
+}
+nav {
+    display: none;
+}
+   
+nav a {
+    display: block;
+}
+.logo{
+    padding: 40px;
+}
+.mybutton  {
+    margin-left: 0;
+}
+.mob-wrapper  {
     display: block;
 }
 }
@@ -76,7 +124,7 @@ header {
    .col {
        width: 100%;
    }
-
+ 
    .hide-mobile {
     display: none;
 }
