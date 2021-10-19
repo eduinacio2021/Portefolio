@@ -1,7 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
+a {
+    color: white;
+    text-decoration: none;
 
+}
 .container {
     min-height: 500px;
     max-width: 1024px;
@@ -9,6 +14,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+.header-container {
+    background-color: rgb(56, 78, 78);
+    min-height: 100px;
+    margin-bottom: 40px;
+}
+header {
+    max-width: 1024px;
+    background-color: rgb(56, 78, 78);
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .col {
@@ -35,6 +54,12 @@ body {
 }
 .col p::first-line {
     font-weight: 700;
+}
+.mybutton {
+    padding:10px 25px ;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
 }
 
 
