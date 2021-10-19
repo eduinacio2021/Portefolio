@@ -80,6 +80,15 @@ header {
 }
 .mob-nav {
     display: none;
+    position: absolute;
+}
+.navbutton  {
+    display: block;
+    background-color: rgb(13, 69, 172);
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+
 }
 /* Smartphone*/
 
@@ -91,11 +100,7 @@ header {
 .hide-desktop-only {
     display: block;
 }
-header {
-    display: block;
-    text-align: center;
 
-}
 .header-container {
     position: relative;
 }
@@ -117,6 +122,7 @@ nav a {
 }
 .mob-wrapper  {
     display: block;
+    padding-right: 30px;
 }
 }
 
